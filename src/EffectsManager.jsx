@@ -15,7 +15,7 @@ export default function EffectsManager() {
 			[effect]: !prevEffects[effect],
 		}));
 	};
-    console.log(effects)
+ 
 
 	return (<></>
  

@@ -228,14 +228,16 @@ strong {
 	gap: 20px;
 }
 
+
 .card {
 	background-color: rgba(255, 255, 255, 0.7);
 	padding: 10px 20px;
 	border-radius: 20px;
 	backdrop-filter: blur(10px) saturate(2) contrast(1.3);
-
 	border: 2px solid rgba(7, 100, 122, 0.5);
 }
+
+
 
 .card h2 {
 	font-size: 6em;
@@ -249,6 +251,18 @@ strong {
 .card p {
 	color: #236f92;
 }
+
+.card a {
+	text-decoration: none; /* Remove underline from links */
+	color: inherit; /* Inherit text color */
+	display: block; /* Make the entire card clickable */
+	width: 100%; /* Ensures the clickable area covers the entire card */
+	height: 100%; /* Ensures the clickable area covers the entire card */
+  }
+  
+  .card:hover {
+	cursor: pointer; /* Show a pointer cursor to indicate interactivity */
+  }
 
 /* FOOTER */
 
@@ -286,11 +300,12 @@ footer {
 	margin-top: 40px;
 }
 
-.footer-left p.copyright {
+p.copyright {
 	font-size: 0.9em;
 	text-transform: unset;
 	font-weight: 200;
-	margin-top: 20px;
+	margin-top: 30px;
+
 }
 
 .footer-right {

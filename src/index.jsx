@@ -5,7 +5,7 @@ import Experience from "./Experience.jsx";
 import Overlay from "./Interface/Overlay.jsx";
 import { isMobile } from "react-device-detect"; // Import the device detection
 
-console.log(isMobile);
+
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(
 	isMobile ? (
