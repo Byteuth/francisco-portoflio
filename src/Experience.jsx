@@ -5,21 +5,22 @@ import {
 	Float,
 	Lightformer,
 	MeshTransmissionMaterial,
-	OrbitControls,
 	Sparkles,
 	Text,
 } from "@react-three/drei";
-import { Suspense, useRef } from "react";
+import { Suspense } from "react";
 import Dna from "./Components/dna";
 import PostProcessing from "./PostProcessing";
-
 import CameraRig from "./CameraRig";
 import CameraAnimation from "./CameraAnimation";
 import EffectsManager from "./EffectsManager";
 
+
 export default function Experience() {
+	
 	return (
 		<>
+
 			<Suspense>
 				<CameraRig>
 					<Float
@@ -82,7 +83,6 @@ export default function Experience() {
 				/>
 				<EffectsManager />
 				<PostProcessing />
-				{/* <CameraRig /> */}
 				<CameraAnimation />
 			</Suspense>
 		</>
